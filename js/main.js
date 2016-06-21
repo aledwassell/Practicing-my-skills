@@ -51,7 +51,12 @@ var todoList = {
       for (var i = 0; i < totalTodos; i++) {
         this.todos[i].completed = false;
       }
+      //otherwise make everything true
+    } else {
+      for (var i = 0; i < totalTodos; i++) {
+        this.todos[i].completed = true;
+      }
     }
-    this.diplayTodos();
+  this.diplayTodos();
   }
-}
+};
