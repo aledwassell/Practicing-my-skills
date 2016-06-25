@@ -2,13 +2,21 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 body {
   margin: 20px;
-  background-color: #2E294E;
-  color: #E0E3DA;
+  background-color: #fff;
+  color: #6a6a6a;
   line-height: 25px;
   letter-spacing: 1px;
   font-family: "Open Sans", Helvetica, sans-serif; }
 
 button {
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
   background: #a5dff9;
   color: #6a6a6a;
-  font-family: "Roboto Condensed"; }
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  transition: all ease-in-out 250ms;
+  cursor: pointer; }
+  button:hover {
+    box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.3);
+    transform: translate(0px, -5px); }

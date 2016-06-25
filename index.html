@@ -20,8 +20,16 @@
       <p>Click the buttons below and check the console CMD ALT i, <br>add todos by typing: todoList.addTodo('your todo'); into the console, Toggle All will toggle the litte (o)/(x).<br>Happy Hacking!!</p>
     </div>
     <div>
-      <button type="button" id="displayTodosButton">Display Todos</button>
-      <button type="button" id="toggleAllButton">Toggle All</button>
+      <div class="">
+        <button type="button" onClick="handlers.displayTodos()">Display Todos</button>
+        <button type="button" onClick="handlers.toggleAll()">Toggle All</button>
+      </div>
+
+      <div class="">
+        <button type="button" onClick="handlers.addTodo()">Add</button>
+        <input id="addTodoTextInput" type="text">
+      </div>
+
     </div>
     <footer></footer>
     <!-- global.js Link -->
