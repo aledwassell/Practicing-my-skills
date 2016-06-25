@@ -21,13 +21,29 @@
     </div>
     <div>
       <div class="">
-        <button type="button" onClick="handlers.displayTodos()">Display Todos</button>
-        <button type="button" onClick="handlers.toggleAll()">Toggle All</button>
+        <button type="button" onclick="handlers.displayTodos()">Display Todos</button>
+        <button type="button" onclick="handlers.toggleAll()">Toggle All</button>
       </div>
 
       <div class="">
-        <button type="button" onClick="handlers.addTodo()">Add</button>
+        <button onclick="handlers.addTodo()" type="button" >Add</button>
         <input id="addTodoTextInput" type="text">
+      </div>
+
+      <div>
+        <button onclick="handlers.changeTodo()" type="button">Change Todo</button>
+        <input id="changeTodoPositionInput" type="number">
+        <input id="changeTodoTextInput"type="text">
+      </div>
+
+      <div>
+        <button onclick="handlers.deleteTodo()"type="button">Delete Todo</button>
+        <input id="deleteTodoPositionInput" type="number">
+      </div>
+
+      <div>
+        <button onclick="handlers.toggleCompleted()"type="button">Toggle Completed</button>
+        <input id="toggleCompletedPositionInput" type="number">
       </div>
 
     </div>
