@@ -91,3 +91,15 @@ var handlers = {
     todoList.toggleAll();
   }
 };
+
+var view = {
+  displayTodos: function() {
+    var todoUl = document.querySelector('ul');
+    todoUl.innerHTML = '';
+    for (var i = 0; i < todoList.todos.length; i++) {
+      var todoLi = document.createElement('li');
+      todoLi.textContent = todoList.todos[i].todoText;
+      todoUl.appendChild(todoLi);
+    }
+  }
+};
