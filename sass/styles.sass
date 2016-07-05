@@ -7,6 +7,12 @@ $font-color: #6a6a6a
 $button-color: #a5dff9
 $button-font: #6a6a6a
 
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  border-radius:         $radius
+
+
 body
   margin: 20px
   background-color: $bg-color
@@ -17,7 +23,7 @@ body
 
 button
   margin: 3px
-  border-radius: 5px
+  +border-radius(5px)
   border: none
   background: $button-color
   color: $button-font
